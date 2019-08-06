@@ -11,6 +11,7 @@
 
 	<h4>Login Form</h4>
 	
+	<spring:url value="/admin" var="formUrl" />
 	<form action='<spring:url value="/login"/>' method="get">
     <table>
       <tr>
