@@ -46,13 +46,6 @@ public class BarbecueController {
 		return "barbecue_review";
 	}
 	
-	//@PreAuthorize("hasAuthority('ROLE_ADMIN')")
-	@RequestMapping("/findAll")
-	public String findAll(ModelMap modelMap){
-		List<Barbecue> barbecues = (List<Barbecue>)repository.findAll();
-		modelMap.addAttribute("barbecues",barbecues);
-		return "find_All";
-	}
 
 	//@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	@RequestMapping(value = "/find", method = RequestMethod.GET)

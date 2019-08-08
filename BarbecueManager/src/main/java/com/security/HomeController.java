@@ -20,11 +20,4 @@ public class HomeController {
 	public String goHome(Model model) {
 		return "home";
 	}
-	 
-	@PreAuthorize("hasAuthority('ROLE_ADMIN')")
-	@RequestMapping(value="/admin",method = RequestMethod.GET)
-	public String not(Model model) {
-		return "not";
-	}
-	
 }
