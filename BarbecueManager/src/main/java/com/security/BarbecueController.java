@@ -30,6 +30,7 @@ public class BarbecueController {
 		return new Barbecue();
 	}
 
+	
 	//@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String addBarbecue(@ModelAttribute Barbecue barbecue) {
