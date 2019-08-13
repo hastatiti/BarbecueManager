@@ -29,7 +29,6 @@ public class BarbecueController {
 		System.out.println("Adding new Barbecue");
 		return new Barbecue();
 	}
-
 	
 	//@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
